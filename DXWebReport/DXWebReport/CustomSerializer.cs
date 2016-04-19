@@ -1,5 +1,4 @@
-﻿using DevExpress.XtraReports.Native;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +9,7 @@ using System.Data;
 
 namespace DXWebReport
 {
-    public class MyDataViewSerializer : IDataSerializer
+    public class MyDataViewSerializer : DevExpress.XtraReports.Native.IDataSerializer
     {
         public const string Name = "MyDataViewSerializer";
 

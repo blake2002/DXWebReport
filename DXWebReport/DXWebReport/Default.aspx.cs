@@ -34,7 +34,7 @@ namespace DXWebReport
                 ASPxReportDesigner1.OpenReport(rpt);
             }
         }
-        private DevExpress.DataAccess.Sql.SqlDataSource GenerateSqlDataSource()
+        private static DevExpress.DataAccess.Sql.SqlDataSource GenerateSqlDataSource()
         {
             DevExpress.DataAccess.Sql.SqlDataSource result = new DevExpress.DataAccess.Sql.SqlDataSource("ChinookConnection");
             // Create an SQL query.
@@ -43,7 +43,7 @@ namespace DXWebReport
             return result;
         }
 
-        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource GenerateObjectDataSource()
+        private static DevExpress.DataAccess.ObjectBinding.ObjectDataSource GenerateObjectDataSource()
         {
             DevExpress.DataAccess.ObjectBinding.ObjectDataSource result = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource();
             result.Name = "ObjSource";
